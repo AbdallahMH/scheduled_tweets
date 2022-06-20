@@ -12,6 +12,7 @@ class RegistrationsController < ApplicationController
     else
       render :new
     end
+
     # params[:user]
     # => {"email"=>"d@hello", "password"=>"password", "password_confirmation"=>"password"}
     # params
