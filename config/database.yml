@@ -4,13 +4,6 @@ development:
   pool: 5
   timeout: 5000
   encoding: unicode
-test:
-  adapter: postgresql
-  database: my_database_test
-  pool: 5
-  timeout: 5000
-  encoding: unicode
-
 
 production:
   url:  <%= ENV["DATABASE_URL"] %>
