@@ -6,9 +6,3 @@ if ENV["RAILS_LOG_TO_STDOUT"].present?
   logger.formatter = config.log_formatter
   config.logger = ActiveSupport::TaggedLogging.new(logger)
 end
-
-begin
-  require 'minitest/autorun'
-rescue LoadError => e
-  raise e unless ENV['RAILS_ENV'] == "production"
-end
