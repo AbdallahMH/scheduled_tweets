@@ -1,0 +1,9 @@
+<div class="d-flex justify-content-between align-items-center">
+  <h1>Edit Scheduled Tweet</h1>
+</div>
+<%= render "form", tweet: @tweet %>
+<div class="mb-3">
+  <% if @tweet.persisted? %>
+    <%= button_to "Delete", @tweet, method: :delete, form: { data: {turbo_confirm: 'Are you sure?'}}, class: "btn btn-outline-danger" %>
+  <% end %>
+</div>

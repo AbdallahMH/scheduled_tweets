@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  twitter_acount: one
+  body: MyText
+  publish_at: 2022-11-04 18:42:16
+  tweet_id: MyString
+
+two:
+  user: two
+  twitter_acount: two
+  body: MyText
+  publish_at: 2022-11-04 18:42:16
+  tweet_id: MyString
