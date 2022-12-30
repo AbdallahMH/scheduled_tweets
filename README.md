@@ -26,7 +26,9 @@ rails db:create db:migrate
 
 This will install the required dependencies and set up the database.
 
-Next, add your Twitter API keys to the `credentials.yml.enc` file using the `rails credentials:edit` command.
+Next, you will need to create a `master.key` file in the `config` directory. This file is used to decrypt the `credentials.yml.enc` file, which contains your Twitter API keys and other sensitive information.
+
+Once you have created the `master.key` file, you can add your Twitter API keys to the `credentials.yml.enc` file using the `rails credentials:edit` command.
 
 To start the Sidekiq worker, run the following command:
 
