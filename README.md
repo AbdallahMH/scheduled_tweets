@@ -1,24 +1,52 @@
-# README
+# Scheduled Tweets
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to the Scheduled Tweets project! This project allows users to schedule tweets to be posted at a later time using the Twitter API. It is built using Ruby on Rails and follows the [GoRails tutorial](https://gorails.com/episodes/scheduled-tweets-with-sidekiq).
 
-Things you may want to cover:
+## Prerequisites
 
-* Ruby version
+Before you get started, you will need to have the following tools installed on your machine:
 
-* System dependencies
+- Ruby 3.0 or higher
+- Rails 7.0.4 or higher
+- PostgreSQL or MySQL
 
-* Configuration
+You will also need to set up a [Twitter developer account](https://developer.twitter.com/) and create a new app to obtain the necessary API keys. These keys should be added to the `credentials.yml.enc` file using the `rails credentials:edit` command (see below for more details).
 
-* Database creation
+## Getting Started
 
-* Database initialization
+To get started with the project, clone the repository and run the following commands:
 
-* How to run the test suite
+```bash
+bundle install
+rails db:create db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+This will install the required dependencies and set up the database.
 
-* ...
+Next, add your Twitter API keys to the `credentials.yml.enc` file using the `rails credentials:edit` command.
+
+To start the Sidekiq worker, run the following command:
+
+```bash
+sidekiq
+```
+
+
+You can then start the Rails server with the following command:
+
+```bash
+rails server
+```
+
+The application will be available at http://localhost:3000.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+* [GoRails](https://gorails.com/)
+
+Thank you!
