@@ -1,6 +1,8 @@
 # Scheduled Tweets
 
-Welcome to the Scheduled Tweets project! This project allows users to schedule tweets to be posted at a later time using the Twitter API. It is built using Ruby on Rails and follows the [GoRails tutorial](https://gorails.com/episodes/scheduled-tweets-with-sidekiq).
+Welcome to the Scheduled Tweets project!
+This project allows users to schedule tweets to be posted at a later time using the Twitter API.
+It is built using Ruby on Rails and follows the [GoRails tutorial](https://gorails.com/episodes/scheduled-tweets-with-sidekiq).
 
 ## Prerequisites
 
