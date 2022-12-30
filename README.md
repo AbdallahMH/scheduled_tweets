@@ -1,6 +1,8 @@
 # Scheduled Tweets
 
-Welcome to the Scheduled Tweets project! This project allows users to schedule tweets to be posted at a later time using the Twitter API. It is built using Ruby on Rails and follows the [GoRails tutorial](https://gorails.com/episodes/scheduled-tweets-with-sidekiq).
+Welcome to the Scheduled Tweets project!
+This project allows users to schedule tweets to be posted at a later time using the Twitter API.
+It is built using Ruby on Rails and follows the [GoRails tutorial](https://gorails.com/episodes/scheduled-tweets-with-sidekiq).
 
 ## Prerequisites
 
@@ -24,7 +26,9 @@ rails db:create db:migrate
 
 This will install the required dependencies and set up the database.
 
-Next, add your Twitter API keys to the `credentials.yml.enc` file using the `rails credentials:edit` command.
+Next, you will need to create a `master.key` file in the `config` directory. This file is used to decrypt the `credentials.yml.enc` file, which contains your Twitter API keys and other sensitive information.
+
+Once you have created the `master.key` file, you can add your Twitter API keys to the `credentials.yml.enc` file using the `rails credentials:edit` command.
 
 To start the Sidekiq worker, run the following command:
 
