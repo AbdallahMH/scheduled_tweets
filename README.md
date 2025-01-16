@@ -49,6 +49,14 @@ The application will be available at http://localhost:3000.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## Contributors
+
+We would like to thank the following people who have contributed to this project:
+
+- [Abdullah Hezam](https://github.com/AbdallahMH)
+- [Muhannad Alghazali](https://github.com/M-AlGhazali)
+- [Abdullah Alsaif](https://github.com/Abdullah-MSA)
+
 ## Acknowledgments
 
 * [GoRails](https://gorails.com/)
